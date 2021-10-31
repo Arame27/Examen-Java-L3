@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.PatientController">
+   <children>
+      <TableView fx:id="tblview" layoutX="169.0" layoutY="257.0" prefHeight="200.0" prefWidth="462.0">
+        <columns>
+          <TableColumn fx:id="tblType" prefWidth="231.0" text="Type" />
+          <TableColumn fx:id="tblDate" prefWidth="230.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="599.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleRDV" text="demande de rdv" />
+   </children>
+</AnchorPane>
