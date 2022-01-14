@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="698.0" prefWidth="787.0" style="-fx-background-color: #24afa3;" stylesheets="@../Utils/StyleCss.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="views.NewCompteController">
+   <children>
+      <HBox alignment="CENTER" layoutX="220.0" layoutY="38.0" prefHeight="65.0" prefWidth="341.0" style="-fx-background-color: #f8fcfb;" styleClass="contours-container1" stylesheets="@../Utils/StyleCss.css">
+         <children>
+            <Text fill="#43ddd0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouveau Compte">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="147.0" layoutY="142.0" prefHeight="305.0" prefWidth="479.0" style="-fx-background-color: #43ddd0;">
+         <children>
+            <Text fill="#f5f0f0" layoutX="14.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom et Prénom" wrappingWidth="201.984375">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Text>
+            <TextField fx:id="login" layoutX="197.0" layoutY="59.0" prefHeight="31.0" prefWidth="262.0" />
+            <TextField fx:id="login1" layoutX="197.0" layoutY="111.0" prefHeight="31.0" prefWidth="262.0" />
+            <Text fill="#f5f0f0" layoutX="14.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel" wrappingWidth="201.984375">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Text>
+            <TextField fx:id="login11" layoutX="197.0" layoutY="223.0" prefHeight="31.0" prefWidth="262.0" />
+            <TextField fx:id="login12" layoutX="197.0" layoutY="166.0" prefHeight="31.0" prefWidth="262.0" />
+            <Text fill="#f5f0f0" layoutX="14.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="201.984375">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f0f0" layoutX="14.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="201.984375">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button layoutX="531.0" layoutY="640.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #43ddd0;" text="Enregistrer" />
+      <AnchorPane layoutX="146.0" layoutY="455.0" prefHeight="172.0" prefWidth="479.0" style="-fx-background-color: #43ddd0;">
+         <children>
+            <TextField fx:id="login13" layoutX="192.0" layoutY="18.0" prefHeight="137.0" prefWidth="262.0" />
+            <Text fill="#f5f0f0" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antécédents   Médicaux" wrappingWidth="201.984375">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

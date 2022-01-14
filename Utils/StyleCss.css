@@ -1,0 +1,51 @@
+.Cyan-backgroung{
+    -fx-background-color:  #24afa3;
+}
+
+.right-side-border{
+    -fx-border-color:  #43ddd0;
+    -fx-border-width: 0 5 0 0;
+}
+
+.search-container{
+    -fx-border-color: #6F6F6F;
+    -fx-border-radius: 30;
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.primary-color{
+    -fx-background-color: #EFEFEF;
+}
+
+.card{
+    -fx-background-color: #43ddd0;
+    -fx-background-radius : 10;
+}
+
+.card2{
+    -fx-background-color: #BBD2E1;
+    -fx-background-radius : 10;
+}
+
+.card3{
+    -fx-background-color: #fff;
+    -fx-background-radius : 10;
+}
+
+.buttonCombo{
+    -fx-background-color: #43ddd0;
+}
+
+.contours-container{
+    -fx-border-color: #24afa3;
+    -fx-border-radius: 10;
+   
+}
+
+.contours-container1{
+    -fx-border-color:  #f9f9f9 ;
+    -fx-border-radius: 10;
+   
+}

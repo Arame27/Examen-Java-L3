@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="747.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ListePatientsController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="748.0" prefWidth="205.0" stylesheets="@../Utils/StyleCss.css" BorderPane.alignment="CENTER">
+         <styleClass>
+            <String fx:value="Cyan-backgroung" />
+            <String fx:value="right-side-border" />
+         </styleClass>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/pngegg.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icones/dashboard.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Dashboard">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icones/medical_history_64px.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Dossier Médicale">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="55.0" prefWidth="755.0" styleClass="Cyan-backgroung" stylesheets="@../Utils/StyleCss.css">
+               <children>
+                  <Pane prefHeight="55.0" prefWidth="271.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icones/logout_rounded_left_32px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="search-container" stylesheets="@../Utils/StyleCss.css">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icones/search_50px.png" />
+                           </image>
+                        </ImageView>
+                        <TextField prefHeight="31.0" prefWidth="205.0" promptText="Search" styleClass="transparent" stylesheets="@../Utils/StyleCss.css" />
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icones/notification_50px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icones/customer_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="698.0" prefWidth="787.0">
+               <children>
+                  <ImageView fitHeight="437.0" fitWidth="795.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icones/Une-large-variete-de-materiels-medicaux.jpg" />
+                     </image>
+                  </ImageView>
+                  <TableView layoutY="221.0" prefHeight="482.0" prefWidth="796.0">
+                    <columns>
+                      <TableColumn prefWidth="180.0" text="id" />
+                        <TableColumn prefWidth="275.0" text="code" />
+                        <TableColumn prefWidth="340.0" text="Nom Patient" />
+                    </columns>
+                  </TableView>
+                  <HBox alignment="CENTER" layoutX="203.0" layoutY="98.0" prefHeight="65.0" prefWidth="413.0" styleClass="contours-container" stylesheets="@../Utils/StyleCss.css">
+                     <children>
+                        <Text fill="#24afa3" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Patients">
+                           <font>
+                              <Font name="System Bold" size="31.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
